@@ -1,0 +1,20 @@
+#!/bin/bash
+
+export LANG="en_US"
+
+ADRAKE_MODULES="XHax AdobeReader Firefox3.5"
+. /afs/adrake.org/sourceme.bash
+
+xrdb $HOME/.Xresources
+xsetroot -solid black &
+
+if [ -f ~/.Xmodmap ]; then
+	xmodmap ~/.Xmodmap
+fi
+
+xset b off
+
+aklog club.cc.cmu.edu
+
+killall scim-launcher
+exec awesome
