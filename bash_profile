@@ -21,6 +21,12 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# fink
+if [ -r "/sw/bin/init.sh" ]
+then
+	source "/sw/bin/init.sh"
+fi
+
 export XTERMCMD=xterm
 export AFSHOME=/afs/andrew/usr/jwatzman
 export EDITOR=vim
