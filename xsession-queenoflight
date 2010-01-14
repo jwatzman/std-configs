@@ -1,0 +1,28 @@
+#!/bin/sh
+
+SSH_ASKPASS=ssh-askpass
+
+#docker &
+gnome-settings-daemon
+gnome-power-manager &
+xscreensaver -no-splash &
+gs-xs-proxy &
+
+syndaemon -d -t -i 1
+synclient TapButton1=1
+synclient TapButton2=3
+synclient TapButton3=2
+synclient MinSpeed=0.2
+synclient FastTaps=1
+xset m 3 30
+
+#radeonpower power low
+
+# nm-applet &
+wicd-client > /dev/null &
+
+# ssh-add &
+
+#exec ssh-agent ion
+exec ssh-agent awesome
+#exec twm
