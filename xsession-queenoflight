@@ -21,6 +21,8 @@ xset m 3 30
 # nm-applet &
 wicd-client > /dev/null &
 
+xsetroot -solid black
+
 # ssh-add &
 
 #exec ssh-agent ion
