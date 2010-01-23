@@ -21,6 +21,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# cabal-install
+if [ -d "$HOME/.cabal/bin" ] ; then
+	PATH="$HOME/.cabal/bin:$PATH"
+fi
+
 # fink
 if [ -r "/sw/bin/init.sh" ]
 then
