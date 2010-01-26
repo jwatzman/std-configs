@@ -19,7 +19,7 @@ xset m 3 30
 #radeonpower power low
 
 # nm-applet &
-wicd-client > /dev/null &
+wicd-gtk > /dev/null &
 
 xsetroot -solid black
 
