@@ -14,6 +14,9 @@ synclient TapButton2=3
 synclient TapButton3=2
 synclient MinSpeed=0.2
 synclient FastTaps=1
+synclient MinSpeed=0.1
+synclient MaxSpeed=0.5
+synclient AccelFactor=0.03
 xset m 3 30
 
 #radeonpower power low
