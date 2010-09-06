@@ -2,7 +2,7 @@
 
 export LANG="en_US"
 
-ADRAKE_MODULES="XHax AdobeReader Firefox3.5"
+ADRAKE_MODULES="XHax AdobeReader"
 . /afs/adrake.org/sourceme.bash
 
 xrdb $HOME/.Xresources
@@ -18,3 +18,4 @@ aklog club.cc.cmu.edu
 
 killall scim-launcher
 exec awesome
+exec gnome-session
