@@ -26,6 +26,13 @@ if [ -d "$HOME/.cabal/bin" ] ; then
 	PATH="$HOME/.cabal/bin:$PATH"
 fi
 
+# 410
+OSDIR="/afs/cs/academic/class/15410-f10/bin"
+if [ -d "${OSDIR}" ]
+then
+	PATH="${OSDIR}:$PATH"
+fi
+
 # fink
 if [ -r "/sw/bin/init.sh" ]
 then
