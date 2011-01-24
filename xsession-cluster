@@ -14,8 +14,6 @@ fi
 
 xset b off
 
-aklog club.cc.cmu.edu
-
 killall scim-launcher
 exec awesome
 exec gnome-session
