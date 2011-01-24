@@ -27,11 +27,11 @@ if [ -d "$HOME/.cabal/bin" ] ; then
 fi
 
 # 410
-OSDIR="/afs/cs/academic/class/15410-f10/bin"
-if [ -d "${OSDIR}" ]
-then
-	PATH="${OSDIR}:$PATH"
-fi
+#OSDIR="/afs/cs/academic/class/15410-f10/bin"
+#if [ -d "${OSDIR}" ]
+#then
+	#PATH="${OSDIR}:$PATH"
+#fi
 
 # fink
 if [ -r "/sw/bin/init.sh" ]
@@ -46,6 +46,6 @@ export EDITOR=vim
 export DEVKITPRO=$HOME/wii/devkitPRO
 export DEVKITPPC=$DEVKITPRO/devkitPPC
 
-unset GTK_IM_MODULE
-unset QT_IM_MODULE
+export GTK_IM_MODULE=xim
+export QT_IM_MODULE=xim
 unset XMODIFIERS
