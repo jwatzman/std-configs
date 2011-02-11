@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-if [ -x "/usr/bin/aklog" ]
+if [ -x "/usr/bin/aklog" -a `uname` != "Darwin" ]
 then
 	/usr/bin/aklog
 fi
