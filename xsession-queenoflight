@@ -12,11 +12,12 @@ syndaemon -d -t -i 1
 synclient TapButton1=1
 synclient TapButton2=3
 synclient TapButton3=2
-synclient MinSpeed=0.2
 synclient FastTaps=1
 synclient MinSpeed=0.1
 synclient MaxSpeed=0.5
-synclient AccelFactor=0.03
+synclient AccelFactor=0.015
+xinput set-prop appletouch "Device Accel Constant Deceleration" 1.0
+xinput set-prop appletouch "Device Accel Adaptive Deceleration" 10.0
 xset m 3 30
 
 #radeonpower power low
