@@ -222,7 +222,7 @@ globalkeys = awful.util.table.join(
 				{ prompt = "SSH: " },
 				mypromptbox[mouse.screen].widget,
 				function (s)
-					awful.util.spawn("xterm -e ssh " .. s)
+					awful.util.spawn(terminal .. " -e ssh " .. s)
 				end,
 				nil,
 				awful.util.getdir("cache") .. "/history_ssh")
