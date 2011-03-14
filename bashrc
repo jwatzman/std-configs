@@ -2,7 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-if [ -x "/usr/bin/aklog" -a `uname` != "Darwin" ]
+# Grab extra tokens... TODO find a nicer way
+if uname -a | grep -q andrew.cmu.edu
 then
 	/usr/bin/aklog
 fi
