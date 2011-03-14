@@ -22,6 +22,8 @@ xset m 3 30
 nm-applet &
 # wicd-gtk > /dev/null &
 
+krb5-auth-dialog -A &
+
 xsetroot -solid black
 wmname LG3D
 
