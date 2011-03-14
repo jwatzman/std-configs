@@ -2,7 +2,6 @@
 
 SSH_ASKPASS=ssh-askpass
 
-#docker &
 gnome-settings-daemon
 gnome-power-manager &
 xscreensaver -no-splash &
@@ -20,15 +19,10 @@ xinput set-prop appletouch "Device Accel Constant Deceleration" 1.0
 xinput set-prop appletouch "Device Accel Adaptive Deceleration" 10.0
 xset m 3 30
 
-#radeonpower power low
-
 nm-applet &
 # wicd-gtk > /dev/null &
 
 xsetroot -solid black
+wmname LG3D
 
-# ssh-add &
-
-#exec ssh-agent ion
 exec ssh-agent awesome
-#exec twm
