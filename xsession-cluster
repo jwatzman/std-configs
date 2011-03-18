@@ -2,7 +2,7 @@
 
 export LANG="en_US"
 
-ADRAKE_MODULES="XHax AdobeReader"
+ADRAKE_MODULES="XHax AdobeReader Firefox"
 . /afs/adrake.org/sourceme.bash
 
 xrdb $HOME/.Xresources
