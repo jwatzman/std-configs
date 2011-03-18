@@ -1,0 +1,5 @@
+xterm*background: black
+xterm*foreground: white
+xterm*metaSendsEscape: true
+xterm*deleteIsDEL: true
+xterm*scrollBar: false
