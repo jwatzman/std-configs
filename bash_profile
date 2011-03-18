@@ -39,7 +39,7 @@ then
 	source "/sw/bin/init.sh"
 fi
 
-export XTERMCMD=xterm
+export XTERMCMD=uxterm
 export AFSHOME=/afs/andrew/usr/jwatzman
 export EDITOR=vim
 

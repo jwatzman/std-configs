@@ -1,0 +1,9 @@
+[user]
+	name = Josh Watzman
+	email = jwatzman@jwatzman.org
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = matching
