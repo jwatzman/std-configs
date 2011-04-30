@@ -14,3 +14,4 @@ set tags=tags;
 set completeopt=longest,menu
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabLongestHighlight = 1
+let g:is_posix = 1
