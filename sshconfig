@@ -1,0 +1,36 @@
+Protocol 2,1
+
+Host andrew
+Hostname unix.andrew.cmu.edu
+User jwatzman
+GSSApiAuthentication yes
+GSSAPIDelegateCredentials yes
+
+Host homephobos
+Hostname phobos.jwatzman.org
+User josh
+ForwardX11 yes
+Port 4404
+
+Host homephoboswireless
+Hostname phobos.jwatzman.org
+User josh
+ForwardX11 yes
+Port 4405
+
+Host nyus
+Hostname nyus.joshuawise.com
+User jwatzman
+
+Host cclub
+Hostname iridium.club.cc.cmu.edu
+User jwatzman
+
+Host maxi
+Hostname maximegalon.andrew.cmu.edu
+User jwatzman
+
+Host iphigenia
+Hostname iphigenia.res.cmu.edu
+User jwatzman
+Port 4404
