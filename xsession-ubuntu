@@ -1,0 +1,15 @@
+#!/bin/sh
+
+gnome-settings-daemon
+gnome-power-manager &
+# xscreensaver -no-splash &
+# gs-xs-proxy &
+
+nm-applet &
+
+# krb5-auth-dialog -A &
+
+xsetroot -solid black
+# wmname LG3D
+
+exec awesome
