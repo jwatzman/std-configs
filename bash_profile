@@ -39,6 +39,18 @@ then
 	source "/sw/bin/init.sh"
 fi
 
+# macports
+if [ -d "/opt/local/var/macports" ]
+then
+	export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+	export MANPATH=/opt/local/share/man:$MANPATH
+
+	if [ -f "/opt/local/etc/bash_completion" ]
+	then
+		. /opt/local/etc/bash_completion
+	fi
+fi
+
 export XTERMCMD=uxterm
 export AFSHOME=/afs/andrew/usr/jwatzman
 export EDITOR=vim
