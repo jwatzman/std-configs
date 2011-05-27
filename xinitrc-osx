@@ -1,0 +1,6 @@
+#!/bin/bash
+
+xset b off
+xrdb $HOME/.Xresources
+xmodmap $HOME/.xmodmap
+exec /opt/local/bin/awesome
