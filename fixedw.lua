@@ -33,7 +33,10 @@ end
 
 name = "fixedw"
 function arrange(p)
-	local w = p.workarea.width
-	local f = tag.getmwfact(tag.selected(p.screen))
-	return fixedw(p, w*f)
+	--local w = p.workarea.width
+	--local f = tag.getmwfact(tag.selected(p.screen))
+	--return fixedw(p, w*f)
+
+	-- "xwininfo -size" on an xterm "x resize increment" is 6
+	return fixedw(p, 85 * 6)
 end
