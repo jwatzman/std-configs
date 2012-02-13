@@ -34,3 +34,7 @@ Host iphigenia
 Hostname iphigenia.res.cmu.edu
 User jwatzman
 Port 4404
+
+Host tart
+Hostname 10.1.10.200
+User jwatzman
