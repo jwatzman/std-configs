@@ -25,6 +25,9 @@ fi
 if [ -d "$HOME/.cabal/bin" ] ; then
 	PATH="$HOME/.cabal/bin:$PATH"
 fi
+if [ -d "$HOME/Library/Haskell/bin" ] ; then
+	PATH="$HOME/Library/Haskell/bin:$PATH"
+fi
 
 # 410
 #OSDIR="/afs/cs/academic/class/15410-f10/bin"
