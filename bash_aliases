@@ -6,3 +6,5 @@ alias eyetvvid="mplayer -tv device=/dev/video1:channel=2:chanlist=us-cable tv://
 alias eyetvvidg="mplayer -tv device=/dev/video1 -nocache tv:///2"
 alias eyetvsnd="sox -t alsa hw:1 -t alsa hw:0"
 alias simforward="ssh -L 28000:license-1.srv.cs.cmu.edu:28000 -L33776:license-1.srv.cs.cmu.edu:33776 -N andrew"
+alias v="vim"
+alias vt="vim -t"
