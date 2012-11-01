@@ -55,8 +55,14 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+function rebase_warn {
+  gitdir=`git rev-parse --git-dir 2>/dev/null`
+  [ -d "${gitdir}"/rebase-merge ] || [ -d "${gitdir}"/rebase-apply ] || return
+  echo -n '[! REBASE !]'
+}
+
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}[\[\033[01;35m\]\D{%I:%M%P}\[\033[00m\]][\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]] \$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[1;31m\]$(rebase_warn)\[\033[00m\][\[\033[01;35m\]\D{%I:%M%P}\[\033[00m\]][\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]] \$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}[\D{%I:%M%P}] \u@\h:\w\$ '
 fi
