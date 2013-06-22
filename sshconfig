@@ -36,5 +36,15 @@ User jwatzman
 Port 4404
 
 Host tart
+#Hostname tart.heapified.com
+#Hostname 76.102.52.127
 Hostname 10.1.10.200
 User jwatzman
+
+Host tartsocks
+Hostname tart.heapified.com
+User jwatzman
+DynamicForward 8118
+Compression yes
+StrictHostKeyChecking yes
+LogLevel DEBUG
