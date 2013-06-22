@@ -11,6 +11,7 @@ set textwidth=0
 set wrapmargin=0
 set title
 set tags=tags;
+set cscopetag
 set completeopt=longest,menu
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabLongestHighlight = 1
