@@ -47,4 +47,8 @@ User jwatzman
 DynamicForward 8118
 Compression yes
 StrictHostKeyChecking yes
-LogLevel DEBUG
+#LogLevel DEBUG
+
+Host dareelizabeth
+Hostname ssh.phx.nearlyfreespeech.net
+User jwatzman_dareelizabeth
