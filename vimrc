@@ -8,6 +8,7 @@ set noexpandtab
 set ai
 set copyindent
 filetype indent on
+filetype plugin on
 set textwidth=0
 set wrapmargin=0
 set title
