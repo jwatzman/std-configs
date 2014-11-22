@@ -64,3 +64,5 @@ export DEVKITPPC=$DEVKITPRO/devkitPPC
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 unset XMODIFIERS
+
+export UNISONLOCALHOSTNAME='charybdis.local'
