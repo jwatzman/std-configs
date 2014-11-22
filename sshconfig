@@ -23,7 +23,7 @@ Hostname nyus.joshuawise.com
 User jwatzman
 
 Host cclub
-Hostname indium.club.cc.cmu.edu
+Hostname unix.club.cc.cmu.edu
 User jwatzman
 
 Host maxi
@@ -36,9 +36,9 @@ User jwatzman
 Port 4404
 
 Host tart
-#Hostname tart.heapified.com
+Hostname tart.heapified.com
 #Hostname 76.102.52.127
-Hostname 10.1.10.200
+#Hostname 10.1.10.200
 User jwatzman
 
 Host tartsocks
@@ -52,3 +52,20 @@ StrictHostKeyChecking yes
 Host dareelizabeth
 Hostname ssh.phx.nearlyfreespeech.net
 User jwatzman_dareelizabeth
+
+Host iwalktorun
+Hostname ssh.phx.nearlyfreespeech.net
+User jwatzman_iwalktorun
+
+Host nymph
+Hostname nymph.jwatzman.org
+User jwatzman
+Port 4404
+
+Host nymphsocks
+Hostname nymph.jwatzman.org
+User jwatzman
+Port 4404
+DynamicForward 8118
+Compression yes
+StrictHostKeyChecking yes
