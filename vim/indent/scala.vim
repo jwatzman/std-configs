@@ -12,7 +12,7 @@ setlocal indentexpr=GetScalaIndent()
 
 setlocal indentkeys=0{,0},0),!^F,<>>,o,O
 
-setlocal autoindent shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+"setlocal autoindent shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 
 if exists("*GetScalaIndent")
   finish
