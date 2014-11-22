@@ -38,5 +38,5 @@ function arrange(p)
 	--return fixedw(p, w*f)
 
 	-- "xwininfo -size" on an xterm "x resize increment" is 6
-	return fixedw(p, 85 * 6)
+	return fixedw(p, 85 * 6 + 2)
 end
