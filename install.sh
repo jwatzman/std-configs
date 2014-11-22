@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR=`dirname $0`
-FILES="bash_aliases bash_logout bash_profile bashrc gitconfig vimrc xlog Xresources"
+FILES="bash_aliases bash_logout bash_profile bashrc gitconfig inputrc vimrc xlog Xresources"
 
 if [ $DIR = "." ]
 then
