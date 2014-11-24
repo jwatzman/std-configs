@@ -110,4 +110,7 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-stty -ixon
+# Disable flow control crap (CTRL-S CTRL-Q)
+if [ -t 1 ]; then # TODO If I need this check, should it be in bash_profile?
+    stty -ixon -ixoff
+fi
