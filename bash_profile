@@ -29,6 +29,10 @@ if [ -d "$HOME/Library/Haskell/bin" ] ; then
 	PATH="$HOME/Library/Haskell/bin:$PATH"
 fi
 
+if [ -d "$HOME/.npm-global" ] ; then
+	PATH="$HOME/.npm-global/bin:$PATH"
+fi
+
 # 410
 #OSDIR="/afs/cs/academic/class/15410-f10/bin"
 #if [ -d "${OSDIR}" ]
