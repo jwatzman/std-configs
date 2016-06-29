@@ -1,6 +1,8 @@
 set number
 set relativenumber
 set nohlsearch
+set bg=light
+set backspace=2
 syntax on
 set tabstop=2
 set shiftwidth=2
@@ -15,6 +17,9 @@ set title
 set tags=tags;
 set cscopetag
 set completeopt=longest,menu
+
+autocmd FileType php setlocal comments+=s1:/*,mb:*,ex:*/,://
+
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabLongestHighlight = 1
 let g:is_posix = 1
