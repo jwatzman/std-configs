@@ -18,6 +18,8 @@ set tags=tags;
 set cscopetag
 set completeopt=longest,menu
 
+" Restore postion from viminfo
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 autocmd FileType php setlocal comments+=s1:/*,mb:*,ex:*/,://
 
 let g:SuperTabDefaultCompletionType = "context"
