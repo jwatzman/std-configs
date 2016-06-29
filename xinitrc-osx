@@ -3,4 +3,5 @@
 xset b off
 xrdb $HOME/.Xresources
 xmodmap $HOME/.xmodmap
+export LANG=en_US.UTF-8
 exec /opt/local/bin/awesome
