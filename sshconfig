@@ -58,6 +58,10 @@ Host iwalktorun
 Hostname ssh.phx.nearlyfreespeech.net
 User jwatzman_iwalktorun
 
+Host bethanyandjosh2015
+Hostname ssh.phx.nearlyfreespeech.net
+User jwatzman_bethanyandjosh2015
+
 Host nymph
 Hostname nymph.jwatzman.org
 User jwatzman
@@ -70,3 +74,8 @@ Port 4404
 DynamicForward 8118
 Compression yes
 StrictHostKeyChecking yes
+
+Host omnomnom
+Hostname omnomnom.jwatzman.org
+Port 4101
+AddressFamily inet6
