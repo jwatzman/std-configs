@@ -58,6 +58,14 @@ then
 	fi
 fi
 
+# homebrew
+if [ -d "$HOME/homebrew" ]
+then
+	export PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
+	#export HOMEBREW_BUILD_FROM_SOURCE=1
+	export HOMEBREW_VERBOSE=1
+fi
+
 export XTERMCMD=uxterm
 export AFSHOME=/afs/andrew/usr/jwatzman
 export EDITOR=vim
