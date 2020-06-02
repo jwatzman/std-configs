@@ -24,6 +24,4 @@ set completeopt=longest,menu
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 autocmd FileType php setlocal comments+=s1:/*,mb:*,ex:*/,://
 
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabLongestHighlight = 1
 let g:is_posix = 1
