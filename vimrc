@@ -2,6 +2,7 @@ set nomodeline
 set number
 set relativenumber
 set nohlsearch
+set noincsearch
 set bg=light
 set backspace=2
 syntax on
