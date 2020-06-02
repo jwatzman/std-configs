@@ -1,3 +1,4 @@
+set belloff=all
 set nomodeline
 set number
 set relativenumber
