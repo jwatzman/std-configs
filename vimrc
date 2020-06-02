@@ -20,6 +20,21 @@ set tags=tags;
 set cscopetag
 set completeopt=longest,menu
 
+let g:ale_completion_enabled = 1
+let g:ale_lint_delay = 50
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_text_changed = 1
+let g:ale_open_list = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_sign_column_always = 1
+
+highlight ALEError ctermfg=Black ctermbg=Red
+
+noremap <silent> <LocalLeader>t :ALEHover<CR>
+noremap <silent> <C-]> :ALEGoToDefinition<CR>
+
 " Restore postion from viminfo
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 autocmd FileType php setlocal comments+=s1:/*,mb:*,ex:*/,://
