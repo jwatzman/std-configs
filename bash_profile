@@ -61,7 +61,7 @@ fi
 # homebrew
 if [ -d "$HOME/homebrew" ]
 then
-	export PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
+	eval "$($HOME/homebrew/bin/brew shellenv)"
 	#export HOMEBREW_BUILD_FROM_SOURCE=1
 	export HOMEBREW_VERBOSE=1
 fi
