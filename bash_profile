@@ -78,3 +78,5 @@ export QT_IM_MODULE=xim
 unset XMODIFIERS
 
 export UNISONLOCALHOSTNAME='charybdis.local'
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
