@@ -29,6 +29,7 @@ if [ -d "$HOME/Library/Haskell/bin" ] ; then
 	PATH="$HOME/Library/Haskell/bin:$PATH"
 fi
 
+# npm
 if [ -d "$HOME/.npm-global" ] ; then
 	PATH="$HOME/.npm-global/bin:$PATH"
 fi
@@ -64,6 +65,12 @@ then
 	eval "$($HOME/homebrew/bin/brew shellenv)"
 	#export HOMEBREW_BUILD_FROM_SOURCE=1
 	export HOMEBREW_VERBOSE=1
+fi
+
+# mac vs code
+if [ -d "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ]
+then
+	export PATH=$PATH:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
 
 export XTERMCMD=uxterm
