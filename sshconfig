@@ -1,3 +1,4 @@
+#UseKeychain no
 UseRoaming no
 Protocol 2,1
 
@@ -40,10 +41,11 @@ Host tart
 Hostname tart.heapified.com
 #Hostname 76.102.52.127
 #Hostname 10.1.10.200
+#Hostname 173.228.89.110
 User jwatzman
 
 Host tartsocks
-Hostname tart.heapified.com
+Hostname 173.228.89.110
 User jwatzman
 DynamicForward 8118
 Compression yes
@@ -75,7 +77,25 @@ DynamicForward 8118
 Compression yes
 StrictHostKeyChecking yes
 
+Host dryad
+Hostname dryad.jwatzman.org
+User jwatzman
+Port 4404
+
 Host omnomnom
 Hostname omnomnom.jwatzman.org
 Port 4101
-AddressFamily inet6
+#AddressFamily inet6
+User josh
+
+Host caranthir
+Hostname 10.44.0.1
+User root
+
+Host tron
+Hostname tron.jwatzman.org
+User jwatzman
+
+Host *.compute.amazonaws.com
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
