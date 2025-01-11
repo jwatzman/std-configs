@@ -34,6 +34,11 @@ if [ -d "$HOME/.npm-global" ] ; then
 	PATH="$HOME/.npm-global/bin:$PATH"
 fi
 
+# rust
+if [ -f "$HOME/.cargo/env" ] ; then
+	. "$HOME/.cargo/env"
+fi
+
 # 410
 #OSDIR="/afs/cs/academic/class/15410-f10/bin"
 #if [ -d "${OSDIR}" ]
