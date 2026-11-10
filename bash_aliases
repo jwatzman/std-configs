@@ -9,3 +9,5 @@ alias simforward="ssh -L 28000:license-1.srv.cs.cmu.edu:28000 -L33776:license-1.
 alias dlna="minidlnad -R -v -d -f ~/.minidlna/minidlna.conf"
 alias v="vim"
 alias vt="vim -t"
+alias yt-dlp-iphone1080="yt-dlp -f \"bv*[height<=1080][vcodec^=avc1]+ba[ext=m4a]/b[height<=1080][vcodec^=avc1]\""
+alias yt-dlp-iphone720="yt-dlp -f \"bv*[height<=720][vcodec^=avc1]+ba[ext=m4a]/b[height<=720][vcodec^=avc1]\""
