@@ -1,5 +1,6 @@
 #!/bin/bash
 
+exec /opt/X11/bin/quartz-wm
 xset b off
 xrdb $HOME/.Xresources
 xmodmap $HOME/.xmodmap
