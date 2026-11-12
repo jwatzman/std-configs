@@ -1,0 +1,5 @@
+- When you have a specific tool to do a job, prefer using that tool instead of using a shell command. In particular, read and write files using those specific tools, not via a shell `cat` or `sed`.
+- Avoid running `node`, `python`, `bash`, etc with arbitrary scripts where a simple `grep`, `awk`, `jq`, etc pipeline would do. You have auto-approved permission for clear read-only commands, but I need to manually approve everything else. Try not to bother me with these permissions where you could take a simpler approach.
+- Avoid complex shell scripts, especially with loops and variable substitution, when a simple `grep` or even just a tool usage will do. Basic tools and shell commands are auto-approved, but complex pipelines need manual analysis, so avoid that.
+- Avoid changing directory when not needed, especially when running `git` commands. `git` will automatically use the repo root, no need for `cd` or `-C`.
+- Similarly, if you are being run in a subdirectory, take that as a strong hint (but not a hard rule) that you should only look at things in that directory. This is likely to help you only keep relevant things in your context window.
